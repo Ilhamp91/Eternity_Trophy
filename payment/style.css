@@ -1,0 +1,130 @@
+.form1 {
+ margin: 50px auto;
+  width: 550px;
+  background: #000000;
+  border-radius: 5px;
+}
+
+.form2 {
+margin: 50px auto;
+  width: 550px;
+  background: #000000;
+  border-radius: 5px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #02033b 0%, #000000 50%, #3b3805 100%);
+}
+
+fieldset {
+  padding: 20px;
+}
+
+label {
+  padding: 30px;
+  font-weight: bold;
+  color: #917312;
+  margin-bottom: 20px;
+}
+
+fieldset {
+  font-weight: bold;
+}
+
+input[type='number'],
+input[type='text'] {
+  padding: 4px;
+  width: 20em;
+  margin-bottom: 10px;
+  background-color: #fff;
+  border: none;
+  border-radius: 20px;
+}
+
+select {
+  padding: 2px;
+  margin-bottom: 10px;
+}
+
+h4 {
+  padding: 10px;
+  text-align: center;
+  color: #000000;
+  background-color: #727171;
+  margin-bottom: 10px;
+  border-radius: 7px;
+  width: 102%;
+  margin-left: -10px;
+}
+
+input[type='button'] {
+  margin-bottom: 20px;
+  background-color: #a00808;
+  border: none;
+  padding: 10px;
+  color: white;
+  border-radius: 3px;
+}
+
+#invoice-container {
+  border: 1px solid #b8c1ec;
+  border-radius: 5px;
+  padding: 20px;
+  background-color: #55430a;
+  width: 510px;
+}
+
+#invoice-container h3 {
+  text-align: center;
+  color: #000000;
+  background-color: #727171;
+  padding: 10px;
+  border-radius: 7px;
+}
+
+#invoice-container table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+#invoice-container table td {
+  padding: 10px;
+  border-bottom: 1px solid #000000;
+}
+
+#invoice-container table tr:last-child td {
+  border-bottom: none;
+}
+
+#invoice-container table td:first-child {
+  font-weight: bold;
+  color: #000000;
+  width: 40%;
+}
+
+#invoice-container table td:last-child {
+  text-align: right;
+}
+
+p {
+  padding: 10px;
+  text-align: center;
+  color: #070707;
+  background-color:  #727171;
+  font-weight: bold;
+  margin-bottom: 10px;
+  border-radius: 7px;
+  width: 100%;
+  margin-left: -10px;
+}

@@ -1,0 +1,74 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #000000 0%, #030333 50%, #5a480c 100%);
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.biodata-container {
+    width: 850px;
+}
+
+.biodata-card {
+    background-color: #232946;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    display: flex;
+    overflow: hidden;
+}
+
+.photo {
+    flex: 1;
+    background-color:  #232946;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.photo img {
+    width: 100%;
+    width: 300px;
+    height: auto;
+    border-radius: 12px 0 0 12px;
+}
+
+.details {
+    flex: 2;
+    padding: 20px;
+}
+
+.name {
+    margin-top: 10px;
+    font-size: 50px;
+    color: #918625;
+	font-family: 'Bentham', serif;
+}
+
+.info {
+    margin: 25px 0;
+    color: rgb(182, 176, 176);
+	font-size: 25px;
+}
+
+.social-links {
+    margin-top: 100px;
+}
+
+.social-link {
+    display: inline-block;
+    margin-right: 25px;
+    padding: 15px 40px;
+    background-color: #6f7074;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 80px;
+    transition: background-color 0.3s;
+	font-size: 18px;
+}
+
+.social-link:hover {
+    background-color: #ac9b3c;
+}

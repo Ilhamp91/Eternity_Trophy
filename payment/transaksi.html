@@ -1,0 +1,111 @@
+<html>
+<head>
+ <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<form class="form1">
+<h4>PEMESANAN PIALA</h4>
+  <table>
+  <tr>
+   <td><label>NAMA</label></td>
+   <td><input type="text" id="inp_nama" name=""></td>
+  </tr>
+  <tr>
+   <td><label>ALAMAT</label></td>
+   <td><input type="text" id="inp_alamat" name=""></td>
+  </tr>
+  <tr>
+   <td><label>PILIHAN PIALA</label></td>
+   <td><select onchange="Pilihan()" id="inp_pilihan">
+    <option>--PILIH PIALA SESUAI KODE--</option><br>
+    <option value="PCM1">PCM1</option>
+    <option value="PCM2">PCM2</option>
+    <option value="PCM3">PCM3</option>
+    <option value="PMM1">PMM1</option>
+    <option value="PMM2">PMM2</option>
+    <option value="PMM3">PMM3</option>
+    <option value="PKM1">PKM1</option>
+    <option value="PKM2">PKM2</option>
+    <option value="PKM3">PKM3</option>
+    <option value="PBM1">PBM1</option>
+    <option value="PBM2">PBM2</option>
+    <option value="PBM3">PBM3</option>
+    <option value="PSM1">PSM1</option>
+    <option value="PSM2">PSM2</option>
+	  <option value="PSM3">PSM3</option>
+    </select>
+   </td>
+  </tr>
+  <tr>
+   <td><label>HARGA PIALA</label></td>
+   <td><input type="text" id="tampil1" disabled="true" name=""></td>
+   <tr>
+   <td><label>JUMLAH</label></td>
+   <td><input onchange="Total()" type="number" min="1" id="inp_jumlah" name=""></td>
+  </tr>
+  <tr>
+   <td><label>PENGIRIMAN</label></td>
+   <td><select onchange="Pengiriman()" id="inp_pengiriman">
+    <option>--PILIH PENGIRIMAN--</option>
+	<option value="JNE">JNE</option>
+    <option value="SiCepat">SiCepat</option>
+	<option value="GO-Send">GO-Send</option>
+    </select>
+   </td>
+  </tr>
+  <tr>
+   <td><label>HARGA PENGIRIMAN</label></td>
+   <td><input type="text" id="tampil2" disabled="true" name=""></td>
+   </tr>
+  <tr>
+   <td><label>CATATAN REQUEST</label></td>
+   <td><input type="text" id="inp_req" name=""></td>
+  </tr>
+  <tr>
+   <td><label>TOTAL</label></td>
+   <td><input type="text" id="total" disabled="true" name=""></td>
+  </tr>
+  </table>
+  <center><input type="button" value="PESAN" onclick="pesan()" name=""></center>
+</form>
+
+<form class="form2">
+<div id="invoice-container">
+	<h3>INVOICE</h3>
+    <table>
+      <tr>
+        <td><strong>NAMA </strong></td>
+        <td id="nameCell"></td>
+      </tr>
+      <tr>
+        <td><strong>ALAMAT </strong></td>
+        <td id="addressCell"></td>
+      </tr>
+      <tr>
+        <td><strong>PILIHAN PIALA </strong></td>
+        <td id="pialaCell"></td>
+      </tr>
+      <tr>
+        <td><strong>JUMLAH </strong></td>
+        <td id="quantityCell"></td>
+      </tr>
+      <tr>
+        <td><strong>PENGIRIMAN </strong></td>
+        <td id="shippingCell"></td>
+      </tr>
+      <tr>
+        <td><strong>CATATAN REQUEST </strong></td>
+        <td id="requestCell"></td>
+      </tr>
+      <tr>
+        <td><strong>TOTAL </strong></td>
+        <td id="totalCell"></td>
+      </tr>
+    </table>
+    <p>Thank you for your order!</p>
+  </div>
+    </div>
+</form>
+<script type="text/javascript" src="main.js"></script>
+</body>
+</html>
